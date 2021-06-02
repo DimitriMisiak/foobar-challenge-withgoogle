@@ -27,8 +27,8 @@ def solution(dimensions, my_position, opp_position, beam_range):
     }
     
     
-    h_dist = 2 * dimensions[0]
-    v_dist = 2 * dimensions[1]
+    h_dist = float(2 * dimensions[0])
+    v_dist = float(2 * dimensions[1])
     
     h_repetition = m.ceil(beam_range/h_dist)
     v_repetition = m.ceil(beam_range/v_dist)
@@ -108,5 +108,5 @@ def solution(dimensions, my_position, opp_position, beam_range):
 # =============================================================================
 # MAIN
 # =============================================================================
-print(solution([3,2], [1,1], [2,1], 2000))
+print(solution([3,2], [1,1], [2,1], 4))
 print(solution([300,275], [150,150], [185,100], 500))
